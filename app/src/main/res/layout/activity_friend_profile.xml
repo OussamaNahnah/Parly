@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".friend_profile"
+    android:background="@drawable/background2"
+    android:id="@+id/friend_profile"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/linearlayoutsearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/cover_friend"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_below="@id/linearlayoutsearch"
+                android:src="@drawable/cover_icon"
+
+                android:scaleType="centerCrop" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_friend"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/linearlayoutsearch"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/profile_icon"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="3dp"
+                android:background="@drawable/profile_background"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/img_friend"
+                android:id="@+id/username_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:hint=""
+                android:textColorHint="@color/white"
+                android:fontFamily="@font/raphtalia"
+                android:textSize="26sp"
+                />
+
+            <TextView
+
+                android:inputType="textMultiLine"
+                android:minLines="1"
+                android:maxLines="2"
+                android:scrollbars="vertical"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/username_friend"
+                android:id="@+id/bio_friend"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text=""
+                android:textSize="20sp"
+                android:fontFamily="@font/scriptbl"/>
+            <!--<Button
+                android:id="@+id/opendiscussion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editviewheight"
+                android:layout_below="@id/bio"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn"
+                android:fontFamily="@font/lunchtype25mediumcondensed"
+                android:foregroundGravity="center"
+                android:text="@string/opendiscussion"
+                android:textColor="@color/black"
+                android:textSize="@dimen/editview"
+
+                />-->
+            <Button
+                android:id="@+id/btn_send_request"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editviewheight"
+                android:layout_below="@id/bio_friend"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn"
+                android:fontFamily="@font/lunchtype25mediumcondensed"
+                android:foregroundGravity="center"
+                android:text="@string/send_request"
+                android:textColor="@color/black"
+                android:textSize="@dimen/editview"
+
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/btn_send_request"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_request">
+
+                <Button
+                    android:id="@+id/btn_accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/btn"
+                    android:fontFamily="@font/lunchtype25mediumcondensed"
+                    android:foregroundGravity="center"
+                    android:text="Accept"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/editview" />
+
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn"
+                    android:fontFamily="@font/lunchtype25mediumcondensed"
+                    android:foregroundGravity="center"
+                    android:text="Delete"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/editview"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn_unfriend"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editviewheight"
+                android:layout_below="@id/layout_request"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn"
+                android:fontFamily="@font/lunchtype25mediumcondensed"
+                android:foregroundGravity="center"
+                android:text="@string/unfriend"
+                android:textColor="@color/black"
+                android:textSize="@dimen/editview"
+
+                />
+<Button
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editviewheight"
+                android:layout_below="@id/btn_unfriend"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn"
+                android:fontFamily="@font/lunchtype25mediumcondensed"
+                android:foregroundGravity="center"
+                android:text="@string/back"
+                android:textColor="@color/black"
+                android:textSize="@dimen/editview"
+
+                />
+
+
+        </RelativeLayout>
+    </ScrollView></LinearLayout>

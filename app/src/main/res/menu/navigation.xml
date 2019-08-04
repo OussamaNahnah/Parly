@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/discussionlist"
+        android:icon="@drawable/discussion_icon"
+        android:title="@string/discussionlist" />
+
+    <item
+        android:id="@+id/Users"
+        android:icon="@drawable/actifs_icon"
+        android:title="@string/Users" />
+
+    <item
+        android:id="@+id/Request"
+        android:icon="@drawable/groups_icon"
+        android:title="@string/Request" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile_icon_"
+        android:title="@string/profile" />
+
+</menu>

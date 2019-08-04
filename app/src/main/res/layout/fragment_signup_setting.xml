@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/linearlayoutsearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:orientation="horizontal" />
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_below="@id/linearlayoutsearch"
+                android:background="@drawable/cover_icon"
+                android:backgroundTint="#4AFFFFFF">
+
+                <ImageView
+                    android:id="@+id/chenge_cover_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/add_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/raphtalia"
+                        android:gravity="center"
+                        android:text="press here to change "
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_height="150dp"
+                    android:id="@+id/chenge_img_profile"
+
+                    android:layout_marginTop="100dp"
+                    android:layout_below="@id/linearlayoutsearch"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/profile_icon"
+                    android:backgroundTint="#99FFFFFF"
+                    android:layout_width="150dp"
+
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp"
+                    app:civ_circle_background_color="@color/white"
+                    app:civ_fill_color="@color/white" />
+
+
+            <TextView
+                android:id="@+id/username_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chenge_img_profile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/raphtalia"
+                android:hint=""
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:id="@+id/chenge_username"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username_profile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/editview2"
+                android:fontFamily="@font/raphtalia"
+                android:gravity="center"
+                android:hint="change Username"
+                android:inputType="textMultiLine"
+                android:maxLines="1"
+                android:padding="7dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/white"
+
+                android:textColorHint="@color/whitemiddle"
+
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/chenge_bio"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chenge_username"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/editview2"
+                android:fontFamily="@font/raphtalia"
+                android:gravity="center"
+                android:hint="Tap your Bio"
+                android:inputType="textMultiLine"
+
+                android:maxLines="2"
+                android:minLines="2"
+                android:scrollbars="vertical"
+                android:textColor="@color/white"
+                android:textColorHint="@color/whitemiddle"
+                android:textSize="20sp" />
+
+
+            <!--<Button
+                android:id="@+id/opendiscussion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editviewheight"
+                android:layout_below="@id/bio"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn"
+                android:fontFamily="@font/lunchtype25mediumcondensed"
+                android:foregroundGravity="center"
+                android:text="@string/opendiscussion"
+                android:textColor="@color/black"
+                android:textSize="@dimen/editview"
+
+
+                />-->
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editviewheight"
+                android:layout_below="@id/chenge_bio"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn"
+                android:fontFamily="@font/lunchtype25mediumcondensed"
+                android:foregroundGravity="center"
+                android:text="@string/save"
+                android:textColor="@color/black"
+                android:textSize="@dimen/editview"
+
+                />
+
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editviewheight"
+                android:layout_below="@id/progress_bar"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn"
+                android:fontFamily="@font/lunchtype25mediumcondensed"
+                android:foregroundGravity="center"
+                android:text="@string/save"
+                android:textColor="@color/black"
+                android:textSize="@dimen/editview"
+
+                />
+            <Button
+                android:id="@+id/apply"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editviewheight"
+                android:layout_below="@id/save"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn"
+                android:fontFamily="@font/lunchtype25mediumcondensed"
+                android:foregroundGravity="center"
+                android:text="@string/apply"
+                android:textColor="@color/black"
+                android:textSize="@dimen/editview"
+
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Single List Item Design -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:padding="5dp"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/request_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="3dp" />
+
+
+
+    <!-- <ImageView
+        android:id="@+id/list_item_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:rotation="0"/>-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/request_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white" android:fontFamily="@font/raphtalia"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/request_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/scriptbl"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:paddingRight="16dp">
+
+        <ImageButton
+            android:id="@+id/request_accepte"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/white" android:fontFamily="@font/raphtalia"
+            android:textSize="20sp"
+            android:src="@drawable/accept"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            />
+
+        <ImageButton
+            android:id="@+id/request_delete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/scriptbl"
+           android:src="@drawable/annule"
+            android:scaleType="centerCrop"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+</LinearLayout>

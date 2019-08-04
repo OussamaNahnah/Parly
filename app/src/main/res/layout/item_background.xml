@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><!--  Single List Item Design -->
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_background"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:orientation="horizontal"
+        android:padding="5dp"
+
+        >
+
+        <TextView
+            android:id="@+id/background_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/raphtalia"
+
+            android:gravity="center"
+            android:text="press here to change "
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+</LinearLayout>

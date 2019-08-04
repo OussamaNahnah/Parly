@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framelogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_marginTop="40dp"
+                android:id="@+id/app"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_above="@+id/linearlayout"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/scriptbl"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="30dp"
+                android:src="@drawable/app_icon2" />
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+
+                >
+
+                <EditText
+
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editviewheight"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/editview"
+                    android:fontFamily="@font/twopathregular"
+                    android:foregroundGravity="center"
+                    android:hint="@string/Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/blackmiddle"
+                    android:textSize="@dimen/editview" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editviewheight"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/editview"
+                    android:fontFamily="@font/twopathregular"
+                    android:foregroundGravity="center"
+                    android:hint="@string/Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/blackmiddle"
+                    android:textSize="@dimen/editview" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editviewheight"
+                android:layout_below="@id/linearlayout"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn"
+                android:fontFamily="@font/lunchtype25mediumcondensed"
+                android:foregroundGravity="center"
+                android:text="@string/login"
+                android:textColor="@color/black"
+                android:textSize="@dimen/editview"
+
+
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

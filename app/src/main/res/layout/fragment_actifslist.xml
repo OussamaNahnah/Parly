@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actifsList">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+       >
+
+        <EditText
+            android:id="@+id/search_actif"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/editviewheight"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/editview"
+            android:fontFamily="@font/lunchtype25mediumcondensed"
+            android:hint="Search here ..."
+            android:paddingLeft="30dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/blackmiddle"
+            android:textSize="@dimen/editview" />
+
+        <ImageView
+
+            android:layout_width="@dimen/editviewheight"
+            android:layout_height="@dimen/editviewheight"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0"
+            android:src="@drawable/searchicon"
+
+            />
+
+
+    </LinearLayout>
+
+    <GridView
+        android:layout_marginTop="60dp"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:columnWidth="100dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="24dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="spacingWidthUniform"
+        />
+</FrameLayout>
