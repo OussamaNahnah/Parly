@@ -9,5 +9,5 @@
 My first Android application for conversations similar to Messenger
 
 #Tools used
-JAVA+XML
-FIREBASE
+- JAVA+XML
+- FIREBASE
