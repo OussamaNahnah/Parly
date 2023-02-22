@@ -1,4 +1,4 @@
-# Parly
+## Parly
 
 
 <object data="https://github.com/OussamaNahnah/Parly/blob/master/Parly_.pdf" type="application/pdf" width="700px" height="700px">
@@ -6,3 +6,8 @@
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/OussamaNahnah/Parly/blob/master/Parly_.pdf">Download PDF</a>.</p>
     </embed>
 </object>
+My first Android application for conversations similar to Messenger
+
+#Tools used
+JAVA+XML
+FIREBASE
